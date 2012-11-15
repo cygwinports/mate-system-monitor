@@ -1,5 +1,0 @@
-category: MATE
-requires: libcairo2 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libglibmm2.4_1 libgtk2.0_0 libgtkmm2.4_1 libgtop2.0_7 libintl8 libmateconf2_4 librsvg2_2 libsigc2.0_0 libstdc++6 libwnck1_22 libxml2 mate-conf
-sdesc: "MATE system monitor"
-ldesc: "MATE is a fork of the GNOME 2 desktop. It provides an intuitive
-and attractive desktop to Linux users using traditional metaphors."

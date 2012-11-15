@@ -1,4 +1,0 @@
-inherit mate
-
-
-PATCH_URI="1.2.1-cygwin.patch"
