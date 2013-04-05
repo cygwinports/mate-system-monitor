@@ -1,5 +1,5 @@
---- origsrc/mate-system-monitor-1.2.1/configure.in	2012-03-25 17:59:42.000000000 -0500
-+++ src/mate-system-monitor-1.2.1/configure.in	2012-04-18 19:07:04.691769100 -0500
+--- origsrc/mate-system-monitor-1.2.1/configure.ac	2012-03-25 17:59:42.000000000 -0500
++++ src/mate-system-monitor-1.2.1/configure.ac	2012-04-18 19:07:04.691769100 -0500
 @@ -56,7 +56,7 @@ if test "$GCC" = "yes" -a "$set_more_war
      -Wcast-align -Wsign-compare \
      -std=gnu89 \
