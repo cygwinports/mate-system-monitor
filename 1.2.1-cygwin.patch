@@ -30,14 +30,14 @@
  #include <sys/types.h>
  #include <sys/socket.h>
  #include <netinet/in.h>
-@@ -15,6 +16,10 @@
- #include "util.h"
- #include "mateconf-keys.h"
- 
-+#ifndef NI_IDN
-+#define NI_IDN 0
-+#endif
-+
- enum
- {
- 	COL_FD,
+--- origsrc/mate-system-monitor-1.8.0/src/proctable.cpp	2014-01-25 10:04:53.000000000 -0600
++++ src/mate-system-monitor-1.8.0/src/proctable.cpp	2014-10-02 17:27:26.698343000 -0500
+@@ -496,7 +496,7 @@ static void get_process_memory_writable(
+ 	for (unsigned i = 0; i < number; ++i) {
+ #ifdef __linux__
+ 		memwritable += maps[i].private_dirty;
+-#else
++#elif !defined(__CYGWIN__)
+ 		if (maps[i].perm & GLIBTOP_MAP_PERM_WRITE)
+ 			memwritable += maps[i].size;
+ #endif
