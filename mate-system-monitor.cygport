@@ -1,11 +1,11 @@
 inherit mate
 
 NAME="mate-system-monitor"
-VERSION=1.8.0
-RELEASE=3
+VERSION=1.10.1
+RELEASE=1
 CATEGORY="MATE"
 SUMMARY="MATE system monitor"
 DESCRIPTION="MATE is a fork of the GNOME 2 desktop. It provides an intuitive
 and attractive desktop to Linux users using traditional metaphors."
 
-PATCH_URI="1.2.1-cygwin.patch"
+PATCH_URI="1.10.1-cygwin.patch"
